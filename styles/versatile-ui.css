@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+/* font-family: "Dancing Script", cursive; */
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+}
+
+body {
+  background-color: rgb(17, 17, 17);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* shared style */
+.display-flex,
+.card {
+  display: flex;
+}
+
+.btn-primary {
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: 16px 40px;
+  border-radius: 42px;
+  background-color: rgb(230, 83, 60);
+  margin-right: 14px;
+  border: none;
+}
+.mobile-btn,
+.feature-img-mobile,
+.banner-image-mobile,
+.nav-links i {
+  display: none;
+}
+
+main section {
+  margin-top: 100px;
+}
+
+.font-1 {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 14px;
+}
+
+.font-2 {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* header section style */
+#header {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0.07) 100%
+  );
+  margin-bottom: 100px;
+}
+
+/* navbar style */
+.navbar {
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px auto;
+}
+
+.nav-items {
+  align-items: center;
+  gap: 47px;
+}
+.nav-links {
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.13rem;
+  padding: 12px 0;
+}
+
+.home-page {
+  font-weight: 600;
+  border-radius: 46px;
+  background-color: rgb(230, 83, 60);
+  padding: 12px 24px;
+}
+
+.brand {
+  color: rgb(230, 83, 60);
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+/* banner style */
+.banner-container {
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.banner-content {
+  flex-direction: column;
+  max-width: 520px;
+}
+.banner-title {
+  font-weight: 900;
+  font-size: 4.88rem;
+}
+.shape-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 7rem;
+  font-weight: 400;
+}
+.banner-desc {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 28px 0;
+}
+.download-btn {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 42px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.banner-image {
+  position: relative;
+}
+.tutorials, .workout {
+  position: absolute;
+  width: max-content;
+  color: white;
+  background-color: rgba(48, 48, 48, 0.54);
+  padding: 8px 23px;
+  border-radius: 10px;
+  top: 70%;
+  right: 70%;
+  align-items: center;
+}
+
+.workout {
+  top: 22%;
+  right: -30%;
+}
+ .count {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: rgb(250, 250, 249);
+  margin: 15px 15px;
+}
+ .count p {
+  color: rgba(239, 237, 232, 0.65);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+.circle {
+  background-color: rgb(230, 83, 60);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+}
+
+/* habit section style */
+.habits {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.habit-desc {
+  margin-bottom: 55px;
+  max-width: 620px;
+  text-align: center;
+}
+.card {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card img {
+  border-radius: 50%;
+  margin-bottom: 30px;
+  padding: 0 40px;
+}
+.card .desc {
+  max-width: 230px;
+}
+
+/* feature section */
+.feature-box {
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+}
+.feature-content {
+  max-width: 445px;
+  padding: 41px 55px;
+}
+.feature-content .desc {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  line-height: 24px;
+}
+.feature-img {
+  border-radius: 18px;
+  margin: 30px 32px;
+}
+
+/* Media query style */
+
+@media screen and (max-width: 576px) {
+  .habits,
+  .habit-cards,
+  .feature-box,
+  .banner-container {
+    flex-direction: column;
+  }
+
+  .banner-container,
+  .feature-box,
+  .navbar {
+    width: 90%;
+  }
+
+  .tutorials {
+    top: 90%;
+    right: 55%;
+  }
+  .workout {
+    right: 2%;
+    top: 70%;
+  }
+ .count {
+    font-size: 1.125rem;
+    margin: 9px 9px;
+  }
+ .count p {
+    font-size: 12px;
+  }
+  .circle {
+    height: 30px;
+    width: 30px;
+  }
+
+  .banner-title,
+  .shape-text {
+    font-size: 2.25rem;
+  }
+  .nav-links a,
+  .btn-primary,
+  .feature-img,
+  .banner-image {
+    display: none;
+  }
+  .nav-links i,
+  .banner-image-mobile,
+  .mobile-btn,
+  .feature-img-mobile {
+    display: block;
+  }
+
+  .buttons {
+    gap: 14px;
+    margin: 25px 0 50px 0;
+  }
+  .mobile-btn {
+    margin: 0;
+    padding: 16px 36px;
+  }
+
+  .habits {
+    background-color: rgb(17, 17, 17);
+    text-align: center;
+    margin-top: -100px;
+  }
+  .habit-desc {
+    margin-bottom: 80px;
+  }
+  .habit-cards {
+    gap: 40px;
+  }
+  .feature-box {
+    margin-top: -30px;
+  }
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .feature-content .title,
+  .habit-title {
+    font-size: 2rem;
+  }
+
+  .feature-content .desc {
+    font-size: 14px;
+  }
+  .feature-img-mobile {
+    width: 85%;
+    border-radius: 18px;
+    margin-bottom: 33px;
+  }
+}
