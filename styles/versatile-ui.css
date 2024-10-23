@@ -53,7 +53,7 @@ main section {
   margin-bottom: 14px;
 }
 
-.font-2 {
+.font-2, .mentor-details p {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -225,6 +225,51 @@ main section {
   margin: 30px 32px;
 }
 
+/* team gallery section style starts here */
+.team-info {
+  flex-direction: column;
+  max-width: 80%;
+  margin: 100px auto;
+  align-items: center;
+  text-align: center;
+}
+.team-info .desc {
+  max-width: 630px;
+  margin-bottom: 60px;
+}
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 18px;
+}
+.photo-gallery img {
+  width: 326px;
+  height: 272px;
+  border-radius: 10px;
+}
+.mentor-details {
+  position: relative;
+}
+.name-rank {
+  position: absolute;
+  bottom: 5%;
+  text-align: left;
+  left: 5%;
+}
+
+.mentor-details h3{
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.mentor-details p {
+  margin-top: 5px;
+}
+
+/* team gallery section style ends here */
+
 /* Media query style */
 
 @media screen and (max-width: 576px) {
@@ -308,7 +353,7 @@ main section {
   }
 
   .feature-content .title,
-  .habit-title {
+  .habit-title, .team-info .title {
     font-size: 2rem;
   }
 
@@ -319,5 +364,10 @@ main section {
     width: 85%;
     border-radius: 18px;
     margin-bottom: 33px;
+  }
+
+  .photo-gallery {
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
   }
 }
