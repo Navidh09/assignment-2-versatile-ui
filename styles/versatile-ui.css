@@ -426,5 +426,13 @@ hr {
     margin: 45px 0 20px 7%;
     max-width: 80%;
   }
+  .circle {
+    position: relative;
+  }
+  .play-btn {
+    position: absolute;
+    top: 25%;
+    right: 25%;
+  }
 
 }
