@@ -53,7 +53,8 @@ main section {
   margin-bottom: 14px;
 }
 
-.font-2, .mentor-details p {
+.font-2,
+.mentor-details p {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -137,7 +138,8 @@ main section {
 .banner-image {
   position: relative;
 }
-.tutorials, .workout {
+.tutorials,
+.workout {
   position: absolute;
   width: max-content;
   color: white;
@@ -153,13 +155,13 @@ main section {
   top: 22%;
   right: -30%;
 }
- .count {
+.count {
   font-size: 1.5rem;
   font-weight: 900;
   color: rgb(250, 250, 249);
   margin: 15px 15px;
 }
- .count p {
+.count p {
   color: rgba(239, 237, 232, 0.65);
   font-size: 1rem;
   font-weight: 400;
@@ -260,7 +262,7 @@ main section {
   left: 5%;
 }
 
-.mentor-details h3{
+.mentor-details h3 {
   font-size: 1.25rem;
   font-weight: 900;
 }
@@ -270,13 +272,61 @@ main section {
 
 /* team gallery section style ends here */
 
+/* footer section style starts here */
+.copyright {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+.copyright p {
+  margin-top: 30px;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+hr {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.footer-bg {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.section-1,
+.section-2 {
+  margin: 70px auto;
+  max-width: 40%;
+}
+
+.section-title {
+  font-size: 4.375rem;
+  font-weight: 800;
+  color: rgb(230, 83, 60);
+  margin-bottom: 25px;
+}
+
+.section-2 h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.section-2 p {
+  font-size: 1.44rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* footer section style ends here */
+
 /* Media query style */
 
 @media screen and (max-width: 576px) {
   .habits,
   .habit-cards,
   .feature-box,
-  .banner-container {
+  .banner-container,
+  .all-items {
     flex-direction: column;
   }
 
@@ -294,11 +344,11 @@ main section {
     right: 2%;
     top: 70%;
   }
- .count {
+  .count {
     font-size: 1.125rem;
     margin: 9px 9px;
   }
- .count p {
+  .count p {
     font-size: 12px;
   }
   .circle {
@@ -353,7 +403,8 @@ main section {
   }
 
   .feature-content .title,
-  .habit-title, .team-info .title {
+  .habit-title,
+  .team-info .title {
     font-size: 2rem;
   }
 
@@ -367,7 +418,13 @@ main section {
   }
 
   .photo-gallery {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
   }
+  .section-1,
+  .section-2 {
+    margin: 45px 0 20px 7%;
+    max-width: 80%;
+  }
+
 }
